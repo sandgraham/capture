@@ -57,7 +57,9 @@ function processArrangements() {
     var next = arrangements.shift();
 
     chrome.tabs.sendMessage(tab.id, {action: 'scrollPage', x:next[0], y:next[1]}, null, function(response) {
-        captureArrangement(next[0], next[1]);
+        setTimeout(function(){
+            captureArrangement(next[0], next[1]);
+        }, 250);
     });
 }
 
@@ -92,7 +94,6 @@ function captureArrangement(x, y) {
 }
 
 document.getElementById('start').addEventListener('click', function() {
-
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         tab = tabs[0];
 

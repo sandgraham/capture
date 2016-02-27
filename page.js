@@ -44,7 +44,7 @@ function createArrangements(sendResponse) {
         arrangements = [],
         // pad the vertical scrolling to try to deal with
         // sticky headers, 250 is an arbitrary size
-        scrollPad = 200,
+        scrollPad = 250,
         yDelta = windowHeight - (windowHeight > scrollPad ? scrollPad : 0),
         xDelta = windowWidth,
         yPos = fullHeight - windowHeight,
