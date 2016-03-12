@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
 
-    "name": "extenz",
-    "description": "Just trying stuff out.",
+    "name": "capture",
+    "description": "Take a screenshot of entire page and download immediately.",
     "version": "0.1",
 
     "browser_action": {
